@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>슬라이드쇼(RTL)</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="library/jquery-3.6.0.min.js"></script> <!-- jQuery 라이브러리 먼저! -->
+    <script src="script/script.js"></script> <!-- 자바스크립트 소스는 라이브러리 다음에! -->
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>슬라이드쇼_RTL</h1>
+        <!--onclick="moveLeft()" style="cursor: pointer;"-->
+
+        <button type="button" id="start">시작</button>
+        <button type="button" id="stop">중지</button>
+
+        <button id="moveDaum" type="button">Daum으로 이동</button>
+        <button type="button" id="reload">페이지 새로고침</button>
+
+        <button type="button" id="back">이전 페이지</button>
+        <button type="button" id="Go">다음 페이지</button>
+
+        <div id="slideArea">
+            <!--이동 틀-->
+            <div id="slideShuttleFrame">
+                <!--움직이는 것-->
+                <a href="#"><img src="images/img_snow_wide01.jpg" alt="슬라이드이미지1" width="1000"><span>1</span></a>
+                <a href="#"><img src="images/img_mountains_wide02.jpg" alt="슬라이드이미지2" width="1000"><span>2</span></a>
+                <a href="#"><img src="images/img_lights_wide03.jpg" alt="슬라이드이미지3" width="1000"><span>3</span></a>
+            </div>
+            <!-- div#slideShuttleFrame
+                이미지 전체가 이동하는 틀,
+                부모요소보다 넓은 영역,
+                영역이 더 큼-->
+        </div> <!-- div#slideArea 부모요소 -->
+    </div> <!-- div#wrap -->
+
+</body></html>
